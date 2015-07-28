@@ -60,8 +60,7 @@ h6 {
 
 .imgWrap {
 	width: 270px;
-	margin: auto;
-	margin-top: 115px;
+	margin: 125px auto auto;
 }
 
 .shimmerWrap {
@@ -148,7 +147,7 @@ footer a {
 	text-shadow: .5px .5px 0px black;
 	outline: none;
 	color: red;
-	max-width: 420px;
+	max-width: 350px;
 	-webkit-transition-duration: .5s;transition-duration: .5s;
 }
 
@@ -202,12 +201,12 @@ footer a:active, footer a:focus, footer a:hover {
 	/* MAIN CONTENT *******************************************************************************/
 	.imgWrap {
 		width: 450px;
-		margin: 200px auto;
+		margin: 100px auto auto;
 	}
 	
 	.shimmerWrap {
 		width: 450px;
-		margin: -25px auto auto;
+		margin: -50px auto auto;
 		padding-top: 25px;
 		padding-bottom: 15px;
 	}
@@ -289,12 +288,12 @@ footer a:active, footer a:focus, footer a:hover {
 	
 	.imgWrap {
 		width: 525px;
-		margin: 225px auto;
+		margin: 150px auto auto;
 	}
 	
 	.shimmerWrap {
 		width: 525px;
-		margin: -25px auto auto;
+		margin: -50px auto auto;
 		padding-top: 25px;
 		padding-bottom: 15px;
 	}
@@ -339,7 +338,8 @@ footer a:active, footer a:focus, footer a:hover {
 	
 	footer a {
 		display: block;
-		margin: auto auto -20px 150px;
+		margin: auto auto -20px 200px;
+		border-radius: 5px;
 	}
 	
 	footer p {
@@ -377,19 +377,18 @@ footer a:active, footer a:focus, footer a:hover {
 	}
 	
 	h1 span img {
-
 		width: 200px;
 		margin-bottom: -10px;
 	}
 	
 	.imgWrap {
 		width: 625px;
-		margin: 200px auto;
+		margin: 200px auto auto;
 	}
 	
 	.shimmerWrap {
 		width: 625px;
-		margin: -25px auto auto;
+		margin: -50px auto auto;
 		padding-top: 50px;
 		padding-bottom: 15px;
 	}
