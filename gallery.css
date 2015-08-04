@@ -22,10 +22,16 @@ body {
 
 header {
 	position: fixed;
+	top: 10px;
+	left: 10px;
+}
+
+/* header {
+	position: fixed;
 	top: 0;
 	left: 50%;
 	margin-left: -90px;
-}
+} */
 
 h1 {
 	font-family: Impact, Charcoal, sans-serif;
@@ -47,6 +53,13 @@ h6 {
 	margin-top: 10px;
 }
 
+audio {
+	position: fixed;
+	top: 40px;
+	right: 10px;
+	width: 125px;
+	height: 50px;
+}
 
 /* MAIN CONTENT *******************************************************************************/
 #mainDiv {
@@ -169,13 +182,7 @@ footer a:active, footer a:focus, footer a:hover {
 		display: none;
 	}
 	
-	audio {
-		position: fixed;
-		top: 120px;
-		margin-left: -75px;
-		width: 150px;
-		height: 35px;
-	}
+	
 }
 
 
@@ -275,7 +282,7 @@ footer a:active, footer a:focus, footer a:hover {
 	}
 
 	header {
-		margin-left: -250px;
+		/* margin-left: -250px; */
 	}
 
 	h1 {
@@ -368,6 +375,13 @@ footer a:active, footer a:focus, footer a:hover {
 		background-size: contain;
 	}
 
+	header {
+		position: fixed;
+		top: 0;
+		left: 50%;
+		margin-left: -90px;
+	}
+	
 	header {
 		margin-left: -420px;
 	}
