@@ -33,6 +33,7 @@ function stop() {
 document.addEventListener("DOMMouseScroll", stroll);
 document.addEventListener("mousewheel", stroll);
 document.addEventListener("wheel", stroll);
+document.addEventListener("touchstart", stroll);
 
 function stroll() {
 	scrollBy(50,0);

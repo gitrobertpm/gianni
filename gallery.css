@@ -14,8 +14,6 @@ html, body, #wrapper {
 	
 }
 
-
-
 body {
 	position: relative;
 }
@@ -81,7 +79,7 @@ audio {
 
 .imgWrap {
 	width: 270px;
-	margin: 100px auto auto;
+	margin: 160px auto auto;
 }
 
 .shimmerWrap {
@@ -181,7 +179,7 @@ footer a:active, footer a:focus, footer a:hover {
 
 
 /* MEDIA QUERRIES FOR MOBILE SCREENS */
-@media screen and (max-width: 499px) {
+/* @media screen and (max-width: 499px) {
 	.imgWrap {
 		margin-top: 190px;
 	}
@@ -189,7 +187,17 @@ footer a:active, footer a:focus, footer a:hover {
 	.picLamp {
 		display: none;
 	}
-}
+} */
+
+/* LANDSCAPE */
+/* @media only all and (min-width: 200px) and (max-height: 500px) {
+	#stop {
+		-webkit-transform: rotate(-90deg);-ms-transform: rotate(-90deg);transform: rotate(-90deg);
+		left: -35px;
+		bottom: 100px;
+		width: 75px;
+	}
+} */
 
 
 /* MEDIA QUERRIES FOR MEDIUM SCREENS */
@@ -312,11 +320,11 @@ footer a:active, footer a:focus, footer a:hover {
 	
 	audio {
 		position: fixed;
-		bottom: 95px;
-		left: 25px;
-		width: 75px;
+		bottom: 75px;
+		left: 5px;
+		width: 100px;
 		height: 50px;
-		-webkit-transform: rotate(-90deg);-ms-transform: rotate(-90deg);transform: rotate(-90deg);
+		-webkit-transform: rotate(0deg);-ms-transform: rotate(0deg);transform: rotate(0deg);
 	}
 	
 	/* audio {
@@ -351,9 +359,10 @@ footer a:active, footer a:focus, footer a:hover {
 	}
 	
 	#stop {
-		-webkit-transform: rotate(-90deg);-ms-transform: rotate(-90deg);transform: rotate(-90deg);
-		left: -35px;
-		bottom: 100px;
+		-webkit-transform: rotate(0deg);-ms-transform: rotate(0deg);transform: rotate(0deg);
+		left: 50%;
+		margin-left: -50px;
+		bottom: 80px;
 		width: 75px;
 	}
 
@@ -445,11 +454,11 @@ footer a:active, footer a:focus, footer a:hover {
 	
 	audio {
 		position: fixed;
-		bottom: 75px;
-		left: 50%;
-		width: 175px;
-		margin-left: -60px;
-		margin-bottom: 5px;
+		bottom: 40px;
+		left: 150px;
+		width: 30%;
+		/* margin-left: -250px; */
+		/* margin-bottom: 5px; */
 		-webkit-transform: rotate(0deg);-ms-transform: rotate(0deg);transform: rotate(0deg);
 	}
 	
@@ -578,5 +587,12 @@ footer a:active, footer a:focus, footer a:hover {
 	
 	#goRight {
 		margin-left: 100px;
+	}
+	
+	audio {
+		width: 160px;
+		left: 50%;
+		margin-left: -65px;
+		bottom: 50px;
 	}
 }
