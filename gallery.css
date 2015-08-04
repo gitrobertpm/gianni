@@ -185,6 +185,64 @@ footer a:active, footer a:focus, footer a:hover {
   and (device-width: 240px) 
   and (device-height: 320px) 
   and (orientation: landscape) {
+	html, body, #wrapper {
+		width: auto;
+		height: 100%;
+		margin: 0;
+		text-align: center;
+		font-size; 1em;
+	}
+
+	body {
+		position: relative;
+	}
+
+	#wrapper {
+		width: 4500px;
+		background: url('img/galleryBackgroundSm.jpg');
+		background-repeat: repeat-x;
+		background-size: contain;
+		
+	}
+
+	header {
+		position: fixed;
+		top: 0;
+		left: 50%;
+		margin-left: -90px;
+	}
+
+	h1 {
+		font-family: Impact, Charcoal, sans-serif;
+		font-size: 1.5em;
+		color: rgb(75,75,75);
+		margin-top: 0px;
+		margin-bottom: 10px;
+		padding-top: 10px;
+		filter: drop-shadow(25px 25px 15px rgba(0,0,0,.2)) drop-shadow(-25px 25px 15px rgba(0,0,0,.2));
+	}
+
+	h1 span img {
+		display: block;
+		width: 100px;
+		margin: auto;
+	}
+
+	h6 {
+		margin-top: 10px;
+	}
+
+
+	/* MAIN CONTENT *******************************************************************************/
+	#mainDiv {
+		display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;display: flex;
+		-webkit-box-orient: horizontal;-webkit-box-direction: normal;-webkit-flex-direction: row;-ms-flex-direction: row;flex-direction: row;
+		-webkit-flex-wrap: nowrap;-ms-flex-wrap: nowrap;flex-wrap: nowrap;
+		-webkit-box-pack: center;-webkit-justify-content: center;-ms-flex-pack: center;justify-content: center;
+		width: auto;
+		height: 100%;
+	}
+  
 	h1 {
 		padding-top: 5px;
 	}
@@ -262,6 +320,56 @@ footer a:active, footer a:focus, footer a:hover {
 		-webkit-transform: rotate(90deg);-ms-transform: rotate(90deg);transform: rotate(90deg);
 		top: 100px;
 		right: -60px;
+	}
+	
+	/* FOOTER *******************************************************************************/
+	footer {
+		position: fixed;
+		bottom: 0;
+		left: 50%;
+		margin-left: -150px;
+	}
+
+	button {
+		font-family: Impact, Charcoal, sans-serif;
+		font-size: 1.25em;
+		margin: auto auto 15px;
+		padding: 5px;
+		background: rgba(240,240,240,0.9);
+		border: 1px solid white;
+		border-bottom: 1px solid darkgrey;
+		border-radius: 5px;
+		-webkit-transition-duration: .5s;transition-duration: .5s;
+	}
+
+	button:disabled {
+		background: rgba(150,150,150,0.7);
+	}
+
+	button:active, button:focus, button:hover {
+		color: maroon;
+	} 
+
+	footer p {
+		font-size: .75em;
+		margin: 0px auto;
+	}
+
+	footer a {
+		text-decoration: none;
+		font-size: 1.25em;
+		text-shadow: .5px .5px 0px black;
+		outline: none;
+		color: red;
+		max-width: 350px;
+		-webkit-transition-duration: .5s;transition-duration: .5s;
+	}
+
+	footer a:active, footer a:focus, footer a:hover {
+		color: darkorange;
+		text-shadow: .5px .5px .5px brown;
+		background: rgba(240,240,240,0.7);
+		-webkit-transition-duration: .5s;transition-duration: .5s;
 	}
 }
 
