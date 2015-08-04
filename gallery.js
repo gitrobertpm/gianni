@@ -38,26 +38,5 @@ function stroll() {
 	scrollBy(50,0);
 };
 
-//alert(window.getScrollOffsets());
 
-// var scrollDirArray = [];
-
-// function getScrollOffsets(w) {
-	// w = w || window;
-	// if (w.pageXOffset != null) return {x: w.pageXOffset, y:w.pageYOffset};
-// };
-
-
-
-//for (i = 0; i < getScrollOffsets().x.length)
-
-
-
-// if (delta < 0) {
-		// scrollBy(50,0);
-	// } else if (delta > 0) {
-		// scrollBy(-50,0);
-	// }
-
-//alert(wheelDelta);
 
