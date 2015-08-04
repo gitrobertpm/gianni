@@ -182,6 +182,93 @@ footer a:active, footer a:focus, footer a:hover {
 
 /* GALAXY LANDSCAPE */
 @media screen 
+  and (device-width: 240px) 
+  and (device-height: 320px) 
+  and (orientation: landscape) {
+	h1 {
+		padding-top: 5px;
+	}
+
+	.imgWrap {
+		width: 270px;
+		margin: 75px auto auto;
+	}
+
+	.shimmerWrap {
+		position: relative;
+		overflow: hidden;
+		width: 270px;
+		margin: -25px auto auto;
+		padding-top: 25px;
+		padding-bottom: 15px;
+	}
+
+	.shimmer {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 50%;
+		width: 250px;
+		margin-left: 375px;
+		background: -webkit-linear-gradient(25deg, transparent 45%, rgba(255,255,255,0.1) 50%, transparent 55%);background: linear-gradient(65deg, transparent 45%, rgba(255,255,255,0.1) 50%, transparent 55%);
+		-webkit-transition-duration: 2s;transition-duration: 2s;
+		z-index: 9;
+	}
+
+	.shimmerWrap:hover > div {
+		margin-left: -375px;
+		-webkit-transition-duration: 2s;transition-duration: 2s;
+	}
+
+	.img {
+		display: block;
+		width: 250px;
+		margin: auto;
+		
+	}
+
+	.picLamp {
+		display: none;
+	}
+
+	.art {
+		margin-top: -25px;
+	}
+
+	audio {
+		position: fixed;
+		bottom: 65px;
+		left: 5px;
+		width: 125px;
+	}
+
+	#goLeft,
+	#goRight,
+	#stop	{
+		position: fixed;
+	}
+	
+	#goLeft {
+		left: 5px;
+		bottom: 10px;
+	}
+	
+	#goRight {
+		right: 5px;
+		bottom: 10px;
+	}
+	
+	#stop {
+		-webkit-transform: rotate(90deg);-ms-transform: rotate(90deg);transform: rotate(90deg);
+		top: 100px;
+		right: -60px;
+	}
+}
+
+
+
+/* GALAXY LANDSCAPE */
+@media screen 
   and (device-width: 360px) 
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 3)
