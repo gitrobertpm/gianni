@@ -357,7 +357,7 @@ footer a:active, footer a:focus, footer a:hover {
 
 /* LANDSCAPE */
 @media only all and (min-width: 500px) and (max-height: 500px) {
-	h1 {
+	/* h1 {
 		padding-top: 5px;
 	}
 
@@ -434,7 +434,7 @@ footer a:active, footer a:focus, footer a:hover {
 		-webkit-transform: rotate(90deg);-ms-transform: rotate(90deg);transform: rotate(90deg);
 		top: 100px;
 		right: -60px;
-	}
+	} */
 }
 
 
