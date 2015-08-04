@@ -17,7 +17,7 @@ body {
 	background: url('img/galleryBackgroundSm.jpg');
 	background-repeat: repeat-x;
 	background-size: contain;
-	
+	background-attachment: local;
 }
 
 header {
@@ -278,7 +278,7 @@ footer a:active, footer a:focus, footer a:hover {
 		background: url('img/galleryBackgroundM.jpg');
 		background-repeat: repeat-x;
 		background-size: contain;
-		
+		background-attachment: local;
 	}
 
 	header {
@@ -373,6 +373,7 @@ footer a:active, footer a:focus, footer a:hover {
 		background: url('img/galleryBackgroundL.jpg');
 		background-repeat: repeat-x;
 		background-size: contain;
+		background-attachment: local;
 	}
 
 	header {
@@ -519,5 +520,23 @@ footer a:active, footer a:focus, footer a:hover {
 	
 	.art {
 		margin-top: -50px;
+	}
+	
+	button {
+		position: absolute;
+		bottom: 5px;
+		left: 50%;
+	}
+	
+	#goLeft {
+		margin-left: -200px;
+	}
+	
+	#stop {
+		margin-left: -50px;
+	}
+	
+	#goRight {
+		margin-left: 100px;
 	}
 }
