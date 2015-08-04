@@ -38,6 +38,7 @@ function stroll() {
 	scrollBy(50,0);
 };
 
+<<<<<<< HEAD
 //alert(window.getScrollOffsets());
 
 // var scrollDirArray = [];
@@ -60,4 +61,7 @@ function stroll() {
 	// }
 
 //alert(wheelDelta);
+=======
+
+>>>>>>> origin/master
 

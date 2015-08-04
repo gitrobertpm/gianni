@@ -161,10 +161,24 @@ footer a:active, footer a:focus, footer a:hover {
 
 /* MEDIA QUERRIES FOR MOBILE SCREENS */
 @media screen and (max-width: 499px) {
-	audio {
+	.imgWrap {
+		margin-top: 190px;
+	}
+
+	.picLamp {
 		display: none;
 	}
+	
+	audio {
+		position: fixed;
+		top: 120px;
+		margin-left: -75px;
+		width: 150px;
+		height: 35px;
+	}
 }
+
+
 
 
 /* MEDIA QUERRIES FOR MEDIUM SCREENS */
@@ -201,7 +215,11 @@ footer a:active, footer a:focus, footer a:hover {
 	/* MAIN CONTENT *******************************************************************************/
 	.imgWrap {
 		width: 450px;
+<<<<<<< HEAD
 		margin: 115px auto auto;
+=======
+		margin: 100px auto auto;
+>>>>>>> origin/master
 	}
 	
 	.shimmerWrap {
@@ -258,6 +276,88 @@ footer a:active, footer a:focus, footer a:hover {
 	footer p {
 		font-size: .9em;
 		margin: 5px auto;
+	}
+}
+
+/* LANDSCAPE */
+@media only all and (min-width: 500px) and (max-height: 500px) {
+	h1 {
+		padding-top: 5px;
+	}
+
+	.imgWrap {
+		width: 270px;
+		margin: 75px auto auto;
+	}
+
+	.shimmerWrap {
+		position: relative;
+		overflow: hidden;
+		width: 270px;
+		margin: -25px auto auto;
+		padding-top: 25px;
+		padding-bottom: 15px;
+	}
+
+	.shimmer {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 50%;
+		width: 250px;
+		margin-left: 375px;
+		background: -webkit-linear-gradient(25deg, transparent 45%, rgba(255,255,255,0.1) 50%, transparent 55%);background: linear-gradient(65deg, transparent 45%, rgba(255,255,255,0.1) 50%, transparent 55%);
+		-webkit-transition-duration: 2s;transition-duration: 2s;
+		z-index: 9;
+	}
+
+	.shimmerWrap:hover > div {
+		margin-left: -375px;
+		-webkit-transition-duration: 2s;transition-duration: 2s;
+	}
+
+	.img {
+		display: block;
+		width: 250px;
+		margin: auto;
+		
+	}
+
+	.picLamp {
+		display: none;
+	}
+
+	.art {
+		margin-top: -25px;
+	}
+
+	audio {
+		position: fixed;
+		bottom: 65px;
+		left: 5px;
+		width: 125px;
+	}
+
+	#goLeft,
+	#goRight,
+	#stop	{
+		position: fixed;
+	}
+	
+	#goLeft {
+		left: 5px;
+		bottom: 10px;
+	}
+	
+	#goRight {
+		right: 5px;
+		bottom: 10px;
+	}
+	
+	#stop {
+		-webkit-transform: rotate(90deg);-ms-transform: rotate(90deg);transform: rotate(90deg);
+		top: 100px;
+		right: -60px;
 	}
 }
 
