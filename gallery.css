@@ -1,7 +1,7 @@
 /* GALLERY CSS */
 
 html, body, #wrapper {
-	width: 4500px;
+	/* width: 4500px; */
 	height: 100%;
 	margin: 0;
 	text-align: center;
@@ -187,7 +187,7 @@ footer a:active, footer a:focus, footer a:hover {
 /* MEDIA QUERRIES FOR MEDIUM SCREENS */
 @media screen and (min-width: 500px) {
 	html, body, #wrapper {
-		width: 7750px;
+		/* width: 7750px; */
 	}
 
 	#wrapper {
@@ -358,7 +358,7 @@ footer a:active, footer a:focus, footer a:hover {
 /* MEDIA QUERRIES FOR LARGE SCREENS */
 @media screen and (min-width: 1000px) {
 	html, body, #wrapper {
-		width: 16000px;
+		/* width: 16000px; */
 	}
 	
 	#wrapper {
@@ -497,7 +497,7 @@ footer a:active, footer a:focus, footer a:hover {
 /* MEDIA QUERRIES FOR X-LARGE SCREENS */
 @media screen and (min-width: 1500px) {
 	html, body, #wrapper {
-		width: 22500px;
+		/* width: 22500px; */
 	}
 	
 	#wrapper {
