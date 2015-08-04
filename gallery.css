@@ -1,7 +1,7 @@
 /* GALLERY CSS */
 
 html, body, #wrapper {
-	width: auto;
+	width: 4500px;
 	height: 100%;
 	margin: 0;
 	text-align: center;
@@ -14,7 +14,6 @@ body {
 }
 
 #wrapper {
-	width: 4500px;
 	background: url('img/galleryBackgroundSm.jpg');
 	background-repeat: repeat-x;
 	background-size: contain;
@@ -41,7 +40,7 @@ h1 {
 	color: rgb(75,75,75);
 	margin-top: 0px;
 	margin-bottom: 10px;
-	padding-top: 10px;
+	padding-top: 5px;
 	filter: drop-shadow(25px 25px 15px rgba(0,0,0,.2)) drop-shadow(-25px 25px 15px rgba(0,0,0,.2));
 }
 
@@ -57,9 +56,9 @@ h6 {
 
 audio {
 	position: fixed;
-	top: 40px;
-	right: 10px;
-	width: 125px;
+	bottom: 80%;
+	left: 210px;
+	width: 85px;
 	height: 50px;
 }
 
@@ -75,7 +74,7 @@ audio {
 
 .imgWrap {
 	width: 270px;
-	margin: 125px auto auto;
+	margin: 100px auto auto;
 }
 
 .shimmerWrap {
@@ -112,8 +111,7 @@ audio {
 }
 
 .picLamp {
-	width: 270px;
-	margin-bottom: 0px;
+	display: none;
 }
 
 .art {
@@ -183,23 +181,48 @@ footer a:active, footer a:focus, footer a:hover {
 	.picLamp {
 		display: none;
 	}
-	
-	html, body, #wrapper {
-		max-height: 500px;
-	}
 }
 
 
-
-/* LANDSCAPE */
-/* @media only all and (min-width: 500px) and (max-height: 500px) { */
-	/* h1 {
-		padding-top: 5px;
+/* MEDIA QUERRIES FOR MEDIUM SCREENS */
+@media screen and (min-width: 500px) {
+	html, body, #wrapper {
+		width: 7750px;
 	}
 
+	#wrapper {
+		background: url('img/galleryBackgroundM.jpg');
+		background-repeat: repeat-x;
+		background-size: contain;
+		background-attachment: local;
+		overflow-y: hidden;
+	}
+
+	header {
+		/* margin-left: -250px; */
+	}
+
+	h1 {
+		font-size: 1.75em;
+		text-shadow: 1px 1px 0px rgb(200,200,200);
+		padding-top: 10px;
+	}
+
+	h1 span img {
+		display: inline;
+		width: 100px;
+		margin-bottom: -10px;
+	}
+
+	h6 {
+		margin-top: 10px;
+	}
+	
+	
+	/* MAIN CONTENT *******************************************************************************/
 	.imgWrap {
 		width: 270px;
-		margin: 75px auto auto;
+		margin: 30% auto auto;
 	}
 
 	.shimmerWrap {
@@ -234,80 +257,12 @@ footer a:active, footer a:focus, footer a:hover {
 		margin: auto;
 		
 	}
-
+	
 	.picLamp {
 		display: none;
 	}
-
-	.art {
-		margin-top: -25px;
-	}
-
-	audio {
-		position: fixed;
-		bottom: 65px;
-		left: 5px;
-		width: 125px;
-	}
-
-	#goLeft,
-	#goRight,
-	#stop	{
-		position: fixed;
-	}
 	
-	#goLeft {
-		left: 5px;
-		bottom: 10px;
-	}
-	
-	#goRight {
-		right: 5px;
-		bottom: 10px;
-	}
-	
-	#stop {
-		-webkit-transform: rotate(90deg);-ms-transform: rotate(90deg);transform: rotate(90deg);
-		top: 100px;
-		right: -60px;
-	} */
-/* } */
-
-
-
-/* MEDIA QUERRIES FOR MEDIUM SCREENS */
-@media screen and (min-width: 500px) {
-	#wrapper {
-		width: 7750px;
-		background: url('img/galleryBackgroundM.jpg');
-		background-repeat: repeat-x;
-		background-size: contain;
-		background-attachment: local;
-	}
-
-	header {
-		/* margin-left: -250px; */
-	}
-
-	h1 {
-		font-size: 1.75em;
-		text-shadow: 1px 1px 0px rgb(200,200,200);
-		padding-top: 25px;
-	}
-
-	h1 span img {
-		display: inline;
-		width: 100px;
-		margin-bottom: -10px;
-	}
-
-	h6 {
-		margin-top: 10px;
-	}
-	
-	
-	/* MAIN CONTENT *******************************************************************************/
-	.imgWrap {
+	/* .imgWrap {
 		width: 450px;
 		margin: 115px auto auto;
 	}
@@ -334,11 +289,7 @@ footer a:active, footer a:focus, footer a:hover {
 		display: block;
 		width: 420px;
 		margin: auto;
-	}
-
-	.picLamp {
-		margin-bottom: 0px;
-	}
+	} */
 
 	.art {
 		margin-top: -25px;
@@ -351,9 +302,20 @@ footer a:active, footer a:focus, footer a:hover {
 	}
 	
 	audio {
+		position: fixed;
+		bottom: 95px;
+		left: 25px;
+		width: 75px;
+		height: 50px;
+		-webkit-transform: rotate(-90deg);-ms-transform: rotate(-90deg);transform: rotate(-90deg);
+	}
+	
+	/* audio {
+		top: 75px;
+		left: 10px;
 		height: 35px;
 		margin-bottom: 10px;
-	}
+	} */
 	
 	button {
 		width: 125px;
@@ -361,6 +323,29 @@ footer a:active, footer a:focus, footer a:hover {
 	
 	button:nth-of-type(2) {
 		margin: auto 25px;
+	}
+	
+	#goLeft,
+	#goRight,
+	#stop	{
+		position: fixed;
+	}
+	
+	#goLeft {
+		left: 5px;
+		bottom: 10px;
+	}
+	
+	#goRight {
+		right: 5px;
+		bottom: 10px;
+	}
+	
+	#stop {
+		-webkit-transform: rotate(-90deg);-ms-transform: rotate(-90deg);transform: rotate(-90deg);
+		left: -35px;
+		bottom: 100px;
+		width: 75px;
 	}
 
 	footer p {
@@ -372,12 +357,16 @@ footer a:active, footer a:focus, footer a:hover {
 
 /* MEDIA QUERRIES FOR LARGE SCREENS */
 @media screen and (min-width: 1000px) {
-	#wrapper {
+	html, body, #wrapper {
 		width: 16000px;
+	}
+	
+	#wrapper {
 		background: url('img/galleryBackgroundL.jpg');
 		background-repeat: repeat-x;
 		background-size: contain;
 		background-attachment: local;
+		overflow-y: hidden;
 	}
 
 	header {
@@ -393,6 +382,7 @@ footer a:active, footer a:focus, footer a:hover {
 
 	h1 {
 		font-size: 3em;
+		padding-top: 25px;
 	}
 
 	h1 span img {
@@ -404,7 +394,7 @@ footer a:active, footer a:focus, footer a:hover {
 	
 	.imgWrap {
 		width: 525px;
-		margin: 150px auto auto;
+		margin: 25% auto auto;
 	}
 	
 	.shimmerWrap {
@@ -430,9 +420,9 @@ footer a:active, footer a:focus, footer a:hover {
 	}
 
 	.picLamp {
+		width: 270px;
 		margin-bottom: 0px;
 	}
-
 	.art {
 		margin-top: -25px;
 	}
@@ -444,12 +434,41 @@ footer a:active, footer a:focus, footer a:hover {
 	}
 	
 	audio {
-		height: 35px;
+		position: fixed;
+		bottom: 75px;
+		left: 50%;
+		width: 175px;
+		margin-left: -60px;
 		margin-bottom: 5px;
+		-webkit-transform: rotate(0deg);-ms-transform: rotate(0deg);transform: rotate(0deg);
 	}
 	
 	button {
 		margin-bottom: 5px;
+	}
+	
+	#goLeft,
+	#goRight,
+	#stop	{
+		position: fixed;
+	}
+	
+	#goLeft {
+		left: 5px;
+		bottom: 25px;
+	}
+	
+	#goRight {
+		right: 5px;
+		bottom: 25px;
+	}
+	
+	#stop {
+		-webkit-transform: rotate(0deg);-ms-transform: rotate(0deg);transform: rotate(0deg);
+		bottom: 35px;
+		left: 50%;
+		margin-left: -32.5px;
+		width: 125px;
 	}
 	
 	footer a {
@@ -477,11 +496,15 @@ footer a:active, footer a:focus, footer a:hover {
 
 /* MEDIA QUERRIES FOR X-LARGE SCREENS */
 @media screen and (min-width: 1500px) {
-	#wrapper {
+	html, body, #wrapper {
 		width: 22500px;
+	}
+	
+	#wrapper {
 		background: url('img/galleryBackgroundXL.jpg');
 		background-repeat: repeat-x;
 		background-size: contain;
+		overflow-y: hidden;
 	}
 	
 	header {
@@ -526,7 +549,9 @@ footer a:active, footer a:focus, footer a:hover {
 		margin-top: -50px;
 	}
 	
-	button {
+	#goLeft,
+	#goRight,
+	#stop {
 		position: absolute;
 		bottom: 5px;
 		left: 50%;
