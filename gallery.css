@@ -184,7 +184,9 @@ footer a:active, footer a:focus, footer a:hover {
 		display: none;
 	}
 	
-	
+	html, body, #wrapper {
+		max-height: 500px;
+	}
 }
 
 
