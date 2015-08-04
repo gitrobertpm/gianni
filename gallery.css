@@ -276,7 +276,7 @@ footer a:active, footer a:focus, footer a:hover {
 }
 
 /* LANDSCAPE */
-@media only all and (min-width: 500px) and (max-height: 500px) {
+/* @media only all and (min-width: 500px) and (max-height: 500px) {
 	h1 {
 		padding-top: 5px;
 	}
@@ -355,7 +355,7 @@ footer a:active, footer a:focus, footer a:hover {
 		top: 100px;
 		right: -60px;
 	}
-}
+} */
 
 
 /* MEDIA QUERRIES FOR LARGE SCREENS */
