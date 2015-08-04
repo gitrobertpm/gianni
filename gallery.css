@@ -215,11 +215,7 @@ footer a:active, footer a:focus, footer a:hover {
 	/* MAIN CONTENT *******************************************************************************/
 	.imgWrap {
 		width: 450px;
-<<<<<<< HEAD
 		margin: 115px auto auto;
-=======
-		margin: 100px auto auto;
->>>>>>> origin/master
 	}
 	
 	.shimmerWrap {
