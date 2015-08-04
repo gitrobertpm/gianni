@@ -1,13 +1,20 @@
 /* GALLERY CSS */
 
+html {
+	width: 1000%;
+}
+
 html, body, #wrapper {
 	/* width: 4500px; */
+	/* width: auto; */
 	height: 100%;
 	margin: 0;
 	text-align: center;
 	font-size; 1em;
 	
 }
+
+
 
 body {
 	position: relative;
@@ -16,8 +23,8 @@ body {
 #wrapper {
 	background: url('img/galleryBackgroundSm.jpg');
 	background-repeat: repeat-x;
-	background-size: contain;
-	background-attachment: local;
+	background-size: auto 100%;
+	/* background-attachment: local; */
 	overflow-y: hidden;
 }
 
@@ -127,6 +134,7 @@ footer {
 	bottom: 0;
 	left: 50%;
 	margin-left: -150px;
+	z-index: 9999999;
 }
 
 button {
@@ -188,13 +196,14 @@ footer a:active, footer a:focus, footer a:hover {
 @media screen and (min-width: 500px) {
 	html, body, #wrapper {
 		/* width: 7750px; */
+		/* width: auto; */
 	}
 
 	#wrapper {
 		background: url('img/galleryBackgroundM.jpg');
 		background-repeat: repeat-x;
-		background-size: contain;
-		background-attachment: local;
+		background-size: auto 100%;
+		/* background-attachment: local; */
 		overflow-y: hidden;
 	}
 
@@ -359,13 +368,14 @@ footer a:active, footer a:focus, footer a:hover {
 @media screen and (min-width: 1000px) {
 	html, body, #wrapper {
 		/* width: 16000px; */
+		/* width: auto; */
 	}
 	
 	#wrapper {
 		background: url('img/galleryBackgroundL.jpg');
 		background-repeat: repeat-x;
-		background-size: contain;
-		background-attachment: local;
+		background-size: auto 100%;
+		/* background-attachment: local; */
 		overflow-y: hidden;
 	}
 
@@ -498,12 +508,13 @@ footer a:active, footer a:focus, footer a:hover {
 @media screen and (min-width: 1500px) {
 	html, body, #wrapper {
 		/* width: 22500px; */
+		/* width: auto; */
 	}
 	
 	#wrapper {
 		background: url('img/galleryBackgroundXL.jpg');
 		background-repeat: repeat-x;
-		background-size: contain;
+		background-size: auto 100%;
 		overflow-y: hidden;
 	}
 	
