@@ -131,8 +131,8 @@ audio {
 footer {
 	position: fixed;
 	bottom: 0;
-	left: 50%;
-	margin-left: -150px;
+	left: 10px;
+	/* margin-left: -150px; */
 	z-index: 9999999;
 }
 
@@ -316,7 +316,7 @@ footer a:active, footer a:focus, footer a:hover {
 
 	/* FOOTER *******************************************************************************/
 	footer {
-		margin-left: -245px;
+		/* margin-left: -245px; */
 	}
 	
 	audio {
@@ -449,8 +449,8 @@ footer a:active, footer a:focus, footer a:hover {
 	
 	/* FOOTER *******************************************************************************/
 	footer {
-		width: 100%;
-		margin-left: -50%;
+		/* width: 100%;
+		margin-left: -50%; */
 	}
 	
 	audio {
