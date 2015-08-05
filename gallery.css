@@ -324,7 +324,7 @@ footer a:active, footer a:focus, footer a:hover {
 		left: 5px;
 		width: 100px;
 		height: 50px;
-		-webkit-transform: rotate(0deg);-ms-transform: rotate(0deg);transform: rotate(0deg);
+		/* -webkit-transform: rotate(0deg);-ms-transform: rotate(0deg);transform: rotate(0deg); */
 	}
 	
 	/* audio {
@@ -359,7 +359,7 @@ footer a:active, footer a:focus, footer a:hover {
 	}
 	
 	#stop {
-		-webkit-transform: rotate(0deg);-ms-transform: rotate(0deg);transform: rotate(0deg);
+		/* -webkit-transform: rotate(0deg);-ms-transform: rotate(0deg);transform: rotate(0deg); */
 		left: 50%;
 		margin-left: -50px;
 		bottom: 80px;
@@ -459,7 +459,7 @@ footer a:active, footer a:focus, footer a:hover {
 		width: 30%;
 		/* margin-left: -250px; */
 		/* margin-bottom: 5px; */
-		-webkit-transform: rotate(0deg);-ms-transform: rotate(0deg);transform: rotate(0deg);
+		/* -webkit-transform: rotate(0deg);-ms-transform: rotate(0deg);transform: rotate(0deg); */
 	}
 	
 	button {
@@ -483,7 +483,7 @@ footer a:active, footer a:focus, footer a:hover {
 	}
 	
 	#stop {
-		-webkit-transform: rotate(0deg);-ms-transform: rotate(0deg);transform: rotate(0deg);
+		/* -webkit-transform: rotate(0deg);-ms-transform: rotate(0deg);transform: rotate(0deg); */
 		bottom: 35px;
 		left: 50%;
 		margin-left: -32.5px;
