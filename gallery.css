@@ -1,8 +1,6 @@
 /* GALLERY CSS */
 
 html, body, #wrapper {
-	width: auto;
-	height: 100%;
 	margin: 0;
 	text-align: center;
 	font-size; 1em;
@@ -13,18 +11,8 @@ body {
 }
 
 #wrapper {
-	width: 4500px;
-	background: url('img/galleryBackgroundSm.jpg');
-	background-repeat: repeat-x;
+	background: url('img/wall.jpg');
 	background-size: contain;
-	
-}
-
-header {
-	position: fixed;
-	top: 0;
-	left: 50%;
-	margin-left: -90px;
 }
 
 h1 {
@@ -33,7 +21,7 @@ h1 {
 	color: rgb(75,75,75);
 	margin-top: 0px;
 	margin-bottom: 10px;
-	padding-top: 10px;
+	padding-top: 15px;
 	filter: drop-shadow(25px 25px 15px rgba(0,0,0,.2)) drop-shadow(-25px 25px 15px rgba(0,0,0,.2));
 }
 
@@ -43,20 +31,18 @@ h1 span img {
 	margin: auto;
 }
 
-h6 {
-	margin-top: 10px;
+audio {
+	position: absolute;
+	top: 125px;
+	left: 50%;
+	width: 200px;
+	margin-left: -100px;
+	height: 50px;
+	border-radius: 2.5px;
 }
-
 
 /* MAIN CONTENT *******************************************************************************/
-#mainDiv {
-	display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;display: flex;
-	-webkit-box-orient: horizontal;-webkit-box-direction: normal;-webkit-flex-direction: row;-ms-flex-direction: row;flex-direction: row;
-	-webkit-flex-wrap: nowrap;-ms-flex-wrap: nowrap;flex-wrap: nowrap;
-	-webkit-box-pack: center;-webkit-justify-content: center;-ms-flex-pack: center;justify-content: center;
-	width: auto;
-	height: 100%;
-}
+
 
 .imgWrap {
 	width: 270px;
@@ -93,12 +79,10 @@ h6 {
 	display: block;
 	width: 250px;
 	margin: auto;
-	
 }
 
 .picLamp {
-	width: 270px;
-	margin-bottom: 0px;
+	display: none;
 }
 
 .art {
@@ -107,34 +91,14 @@ h6 {
 }
 
 
-
 /* FOOTER *******************************************************************************/
 footer {
-	position: fixed;
-	bottom: 0;
-	left: 50%;
-	margin-left: -150px;
+	padding-bottom: 5px;
 }
 
 button {
-	font-family: Impact, Charcoal, sans-serif;
-	font-size: 1.25em;
-	margin: auto auto 15px;
-	padding: 5px;
-	background: rgba(240,240,240,0.9);
-	border: 1px solid white;
-	border-bottom: 1px solid darkgrey;
-	border-radius: 5px;
-	-webkit-transition-duration: .5s;transition-duration: .5s;
+	display: none;
 }
-
-button:disabled {
-	background: rgba(150,150,150,0.7);
-}
-
-button:active, button:focus, button:hover {
-	color: maroon;
-} 
 
 footer p {
 	font-size: .75em;
@@ -153,66 +117,59 @@ footer a {
 
 footer a:active, footer a:focus, footer a:hover {
 	color: darkorange;
-	text-shadow: .5px .5px .5px brown;
+	text-shadow: .5px .5px .5px black;
 	background: rgba(240,240,240,0.7);
 	-webkit-transition-duration: .5s;transition-duration: .5s;
 }
 
 
-/* MEDIA QUERRIES FOR MOBILE SCREENS */
-@media screen and (max-width: 499px) {
-	.imgWrap {
-		margin-top: 190px;
+/* MEDIA QUERRIES FOR MEDIUM SCREENS */
+@media screen and (min-width: 700px) {
+	html, body, #wrapper {
+		height: 100%;
 	}
 
-	.picLamp {
-		display: none;
+	body {
+		width: 1750%;
 	}
 	
-	audio {
-		position: fixed;
-		top: 120px;
-		margin-left: -75px;
-		width: 150px;
-		height: 35px;
-	}
-}
-
-
-
-
-/* MEDIA QUERRIES FOR MEDIUM SCREENS */
-@media screen and (min-width: 500px) {
 	#wrapper {
-		width: 7750px;
 		background: url('img/galleryBackgroundM.jpg');
 		background-repeat: repeat-x;
-		background-size: contain;
-		
+		background-size: auto 100%;
+		overflow-y: hidden;
 	}
 
 	header {
+		position: fixed;
+		top: 25px;
+		left: 50%;
 		margin-left: -250px;
 	}
-
+	
 	h1 {
+		
 		font-size: 1.75em;
 		text-shadow: 1px 1px 0px rgb(200,200,200);
-		padding-top: 25px;
+		padding-top: 10px;
 	}
 
 	h1 span img {
-		display: inline;
+		display: inline-block;
 		width: 100px;
-		margin-bottom: -10px;
+		margin: auto auto -5px;
 	}
 
-	h6 {
-		margin-top: 10px;
+	/* MAIN CONTENT *******************************************************************************/
+	#mainDiv {
+		display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;display: flex;
+		-webkit-box-orient: horizontal;-webkit-box-direction: normal;-webkit-flex-direction: row;-ms-flex-direction: row;flex-direction: row;
+		-webkit-flex-wrap: nowrap;-ms-flex-wrap: nowrap;flex-wrap: nowrap;
+		-webkit-box-pack: center;-webkit-justify-content: center;-ms-flex-pack: center;justify-content: center;
+		width: auto;
+		height: 100%;
 	}
 	
-	
-	/* MAIN CONTENT *******************************************************************************/
 	.imgWrap {
 		width: 450px;
 		margin: 100px auto auto;
@@ -223,55 +180,100 @@ footer a:active, footer a:focus, footer a:hover {
 		margin: -50px auto auto;
 		padding-top: 25px;
 		padding-bottom: 15px;
+		width: 525px;
+		margin: 25% auto auto;
+	}
+	
+	.shimmerWrap {
+		width: 525px;
+		margin: -50px auto auto;
 	}
 
 	.shimmer {
-		width: 450px;
-		margin-left: 375px;
-		-webkit-transition-duration: 1s;transition-duration: 1s;
+		width: 525px;
+		margin-left: 500px;
 	}
 
 	.shimmerWrap:hover > div {
-		margin-left: -450px;
-		-webkit-transition-duration: 1s;transition-duration: 1s;
+		margin-left: -500px;
 	}
 
 	.img {
-		display: block;
-		width: 420px;
-		margin: auto;
+		width: 500px;
 	}
 
 	.picLamp {
-		margin-bottom: 0px;
+		display: block;
+		width: 270px;
+		margin-bottom: 25px;
 	}
-
-	.art {
-		margin-top: -25px;
-	}
-	
 
 	/* FOOTER *******************************************************************************/
 	footer {
-		margin-left: -245px;
-	}
-	
-	audio {
-		height: 35px;
-		margin-bottom: 10px;
-	}
-	
-	button {
-		width: 125px;
-	}
-	
-	button:nth-of-type(2) {
-		margin: auto 25px;
+		position: fixed;
+		bottom: 0;
+		left: 10px;
+		width: 100%;
 	}
 
+	button {
+		display: block;
+		font-family: Impact, Charcoal, sans-serif;
+		font-size: 1.25em;
+		width: 125px;
+		margin: auto auto 15px;
+		padding: 5px;
+		background: rgba(240,240,240,0.9);
+		border: 1px solid white;
+		border-bottom: 1px solid darkgrey;
+		border-radius: 5px;
+		-webkit-transition-duration: .5s;transition-duration: .5s;
+	}
+
+	button:disabled {
+		background: rgba(150,150,150,0.7);
+	}
+
+	button:active, button:focus, button:hover {
+		color: maroon;
+	} 
+	
 	footer p {
 		font-size: .9em;
 		margin: 5px auto;
+	}
+	
+	audio {
+		position: fixed;
+		top: auto;
+		left: 5px;
+		margin-left: 0;
+		padding-top: 0;
+		width: 125px;
+		height: 50px;
+	}
+	
+	#goLeft,
+	#goRight,
+	#stop	{
+		position: fixed;
+	}
+	
+	#goLeft {
+		left: 5px;
+		bottom: 10px;
+	}
+	
+	#goRight {
+		right: 5px;
+		bottom: 10px;
+	}
+	
+	#stop {
+		left: 50%;
+		margin-left: -50px;
+		bottom: 80px;
+		width: 125px;
 	}
 }
 
@@ -358,21 +360,24 @@ footer a:active, footer a:focus, footer a:hover {
 }
 
 
+
 /* MEDIA QUERRIES FOR LARGE SCREENS */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1000px) {	
 	#wrapper {
-		width: 16000px;
 		background: url('img/galleryBackgroundL.jpg');
 		background-repeat: repeat-x;
-		background-size: contain;
+		background-size: auto 100%;
+		overflow-y: hidden;
 	}
-
+	
 	header {
+		top: 0;
 		margin-left: -420px;
 	}
 
 	h1 {
 		font-size: 3em;
+		padding-top: 25px;
 	}
 
 	h1 span img {
@@ -390,8 +395,6 @@ footer a:active, footer a:focus, footer a:hover {
 	.shimmerWrap {
 		width: 525px;
 		margin: -50px auto auto;
-		padding-top: 25px;
-		padding-bottom: 15px;
 	}
 
 	.shimmer {
@@ -404,32 +407,17 @@ footer a:active, footer a:focus, footer a:hover {
 	}
 
 	.img {
-		display: block;
 		width: 500px;
-		margin: auto;
 	}
 
 	.picLamp {
-		margin-bottom: 0px;
-	}
-
-	.art {
-		margin-top: -25px;
+		width: 325px;
+		margin-bottom: 25px;
 	}
 	
 	/* FOOTER *******************************************************************************/
 	footer {
-		width: 100%;
-		margin-left: -50%;
-	}
-	
-	audio {
-		height: 35px;
-		margin-bottom: 5px;
-	}
-	
-	button {
-		margin-bottom: 5px;
+		padding-bottom: 0;
 	}
 	
 	footer a {
@@ -452,16 +440,50 @@ footer a:active, footer a:focus, footer a:hover {
 		float: right;
 		margin-right: 10px;
 	}
+	
+	audio {
+		position: fixed;
+		bottom: 40px;
+		left: 150px;
+		width: 30%;
+	}
+	
+	button {
+		margin-bottom: 5px;
+	}
+	
+	#goLeft,
+	#goRight,
+	#stop	{
+		position: fixed;
+	}
+	
+	#goLeft {
+		left: 5px;
+		bottom: 25px;
+	}
+	
+	#goRight {
+		right: 5px;
+		bottom: 25px;
+	}
+	
+	#stop {
+		bottom: 35px;
+		left: 50%;
+		margin-left: -32.5px;
+		width: 125px;
+	}
 }
 
 
 /* MEDIA QUERRIES FOR X-LARGE SCREENS */
 @media screen and (min-width: 1500px) {
 	#wrapper {
-		width: 22500px;
 		background: url('img/galleryBackgroundXL.jpg');
 		background-repeat: repeat-x;
-		background-size: contain;
+		background-size: auto 100%;
+		overflow-y: hidden;
 	}
 	
 	header {
@@ -485,8 +507,6 @@ footer a:active, footer a:focus, footer a:hover {
 	.shimmerWrap {
 		width: 625px;
 		margin: -50px auto auto;
-		padding-top: 50px;
-		padding-bottom: 15px;
 	}
 
 	.shimmer {
@@ -500,9 +520,42 @@ footer a:active, footer a:focus, footer a:hover {
 
 	.img {
 		width: 600px;
+		padding-top: 25px;
+	}
+	
+	.picLamp {
+		width: 400px;
+		margin-bottom: 35px;
 	}
 	
 	.art {
 		margin-top: -50px;
+	}
+	
+	#goLeft,
+	#goRight,
+	#stop {
+		position: absolute;
+		bottom: 5px;
+		left: 50%;
+	}
+	
+	#goLeft {
+		margin-left: -200px;
+	}
+	
+	#stop {
+		margin-left: -50px;
+	}
+	
+	#goRight {
+		margin-left: 100px;
+	}
+	
+	audio {
+		width: 155px;
+		left: 50%;
+		margin-left: -55px;
+		bottom: 55px;
 	}
 }
