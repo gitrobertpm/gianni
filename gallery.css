@@ -79,6 +79,7 @@ h1 span img {
 .img {
 	display: block;
 	width: 250px;
+	height: 108px;
 	margin: auto;
 }
 
@@ -289,17 +290,17 @@ audio {
 	}
 	
 	.imgWrap {
-		width: 525px;
+		width: 425px;
 		margin: 25% auto auto;
 	}
 	
 	.shimmerWrap {
-		width: 525px;
+		width: 425px;
 		margin: -50px auto auto;
 	}
 
 	.shimmer {
-		width: 525px;
+		width: 425px;
 		margin-left: 500px;
 	}
 
@@ -308,12 +309,14 @@ audio {
 	}
 
 	.img {
-		width: 500px;
+		width: 400px;
+		height: 160px;
 	}
 
 	.picLamp {
 		display: block;
 		width: 270px;
+		height: 69px;
 		margin-bottom: 25px;
 		-webkit-filter: drop-shadow(5px -10px 10px rgba(0,0,0,.3)) drop-shadow(-5px -10px 10px rgba(0,0,0,.3));filter: drop-shadow(5px -10px 10px rgba(0,0,0,.3)) drop-shadow(-5px -10px 10px rgba(0,0,0,.3));
 	}
@@ -435,10 +438,12 @@ audio {
 
 	.img {
 		width: 500px;
+		height: 200px;
 	}
 
 	.picLamp {
 		width: 325px;
+		height: 75px;
 		margin-bottom: 25px;
 	}
 	
@@ -526,7 +531,7 @@ audio {
 		margin-bottom: -10px;
 	}
 	
-	.imgWrap {
+	/* .imgWrap {
 		width: 625px;
 		margin: 200px auto auto;
 	}
@@ -552,12 +557,13 @@ audio {
 	
 	.picLamp {
 		width: 400px;
+		height: 95px;
 		margin-bottom: 35px;
-	}
+	} */
 	
-	.art {
+	/* .art {
 		margin-top: -50px;
-	}
+	} */
 	
 	#goLeft,
 	#goRight,
