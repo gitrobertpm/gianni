@@ -1,6 +1,7 @@
 /* GALLERY CSS */
 
 html, body, #wrapper {
+	height: 100%;
 	margin: 0;
 	text-align: center;
 	font-size; 1em;
@@ -8,37 +9,37 @@ html, body, #wrapper {
 
 body {
 	position: relative;
+	width: 1750%;
 }
 
 #wrapper {
-	background: url('img/wall.jpg');
-	background-size: contain;
+	background: url('img/galleryBackgroundM.jpg');
+	background-repeat: repeat-x;
+	background-size: auto 100%;
+	overflow-y: hidden;
+}
+
+header {
+	position: fixed;
+	top: 0px;
+	left: 50%;
+	margin-left: -90px;
 }
 
 h1 {
 	font-family: Impact, Charcoal, sans-serif;
 	font-size: 1.5em;
 	color: rgb(75,75,75);
-	margin-top: 0px;
+	margin-top: 10px;
 	margin-bottom: 10px;
 	padding-top: 15px;
-	filter: drop-shadow(25px 25px 15px rgba(0,0,0,.2)) drop-shadow(-25px 25px 15px rgba(0,0,0,.2));
+	-webkit-filter: drop-shadow(25px 25px 15px rgba(0,0,0,.2)) drop-shadow(-25px 25px 15px rgba(0,0,0,.2));filter: drop-shadow(25px 25px 15px rgba(0,0,0,.2)) drop-shadow(-25px 25px 15px rgba(0,0,0,.2));
 }
 
 h1 span img {
 	display: block;
 	width: 100px;
 	margin: auto;
-}
-
-audio {
-	position: absolute;
-	top: 125px;
-	left: 50%;
-	width: 200px;
-	margin-left: -100px;
-	height: 50px;
-	border-radius: 2.5px;
 }
 
 /* MAIN CONTENT *******************************************************************************/
@@ -87,17 +88,16 @@ audio {
 
 .art {
 	margin-top: -25px;
-	filter: drop-shadow(5px 5px 5px rgba(0,0,0,.3)) drop-shadow(-5px 5px 5px rgba(0,0,0,.3));
+	-webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,.3)) drop-shadow(-5px 5px 5px rgba(0,0,0,.3));filter: drop-shadow(5px 5px 5px rgba(0,0,0,.3)) drop-shadow(-5px 5px 5px rgba(0,0,0,.3));
 }
 
 
 /* FOOTER *******************************************************************************/
 footer {
-	padding-bottom: 5px;
-}
-
-button {
-	display: none;
+	position: fixed;
+	bottom: 0;
+	left: 0px;
+	width: 100%;
 }
 
 footer p {
@@ -122,11 +122,128 @@ footer a:active, footer a:focus, footer a:hover {
 	-webkit-transition-duration: .5s;transition-duration: .5s;
 }
 
+/* BUTTON ************************/
+button {
+	display: block;
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 1.25em;
+	width: 125px;
+	margin: auto auto 15px;
+	padding: 5px;
+	background: rgba(240,240,240,0.9);
+	border: 1px solid white;
+	border-bottom: 1px solid darkgrey;
+	border-radius: 5px;
+	-webkit-transition-duration: .5s;transition-duration: .5s;
+}
+
+button:disabled {
+	background: rgba(150,150,150,0.7);
+}
+
+button:active, button:focus, button:hover {
+	color: maroon;
+} 
+
+audio {
+	position: fixed;
+	top: -20px;
+	left: 50%;
+	margin-left: -62.5px;
+	padding-top: 0;
+	width: 125px;
+	height: 50px;
+}
+
+#goLeft,
+#goRight,
+#stop	{
+	position: fixed;
+}
+
+#goLeft {
+	left: 5px;
+	bottom: 55px;
+}
+
+#goRight {
+	right: 5px;
+	bottom: 55px;
+}
+
+#stop {
+	left: 50%;
+	margin-left: -50px;
+	bottom: 100px;
+	width: 125px;
+}
+
+/* MAIN CONTENT *******************************************************************************/
+#mainDiv {
+	display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;display: flex;
+	-webkit-box-orient: horizontal;-webkit-box-direction: normal;-webkit-flex-direction: row;-ms-flex-direction: row;flex-direction: row;
+	-webkit-flex-wrap: nowrap;-ms-flex-wrap: nowrap;flex-wrap: nowrap;
+	-webkit-box-pack: center;-webkit-justify-content: center;-ms-flex-pack: center;justify-content: center;
+	width: auto;
+	height: 100%;
+}
+
+
+
+/* MEDIA QUERRIES FOR Landscape SCREENS */
+@media screen and (min-width: 450px) { 
+	header {
+		position: fixed;
+		top: -25px;
+		left: 50%;
+		margin-left: -220px;
+	}
+
+	h1 span img {
+		display: inline-block;
+		width: 100px;
+		margin: auto auto -5px;
+	}
+	
+	.imgWrap {
+		width: 270px;
+		margin: 25% auto auto;
+	}
+	
+	audio {
+		position: fixed;
+		top: auto;
+		bottom: 65px;
+		left: 5px;
+		margin-left: auto;
+		padding-top: 0;
+		width: 125px;
+		height: 50px;
+	}
+	
+	#goLeft {
+		left: -5px;
+		bottom: 5px;
+	}
+
+	#goRight {
+		right: -5px;
+		bottom: 5px;
+	}
+	
+	#stop {
+		left: 50%;
+		margin-left: -57.5px;
+		bottom: 45px;
+		width: 125px;
+	}
+}
+
 
 
 /* MEDIA QUERRIES FOR MEDIUM SCREENS */
 @media screen and (min-width: 700px) {
-	html, body, #wrapper {
+	/* html, body, #wrapper {
 		height: 100%;
 	}
 
@@ -139,7 +256,7 @@ footer a:active, footer a:focus, footer a:hover {
 		background-repeat: repeat-x;
 		background-size: auto 100%;
 		overflow-y: hidden;
-	}
+	} */
 
 	header {
 		position: fixed;
@@ -198,6 +315,7 @@ footer a:active, footer a:focus, footer a:hover {
 		display: block;
 		width: 270px;
 		margin-bottom: 25px;
+		-webkit-filter: drop-shadow(5px -10px 10px rgba(0,0,0,.3)) drop-shadow(-5px -10px 10px rgba(0,0,0,.3));filter: drop-shadow(5px -10px 10px rgba(0,0,0,.3)) drop-shadow(-5px -10px 10px rgba(0,0,0,.3));
 	}
 
 	/* FOOTER *******************************************************************************/
