@@ -394,7 +394,8 @@ audio {
 }
 
 @media screen and (max-width: 900px) {
-	body {
+	html, body, #wrapper {
+		height: auto;
 		width: auto;
 	}
 
@@ -404,12 +405,22 @@ audio {
 		display: none;
 	}
 	
+	header {
+		position: relative;
+		margin-left: auto;
+		left: auto;
+	}
+	
 	#disabled {
 		display: block;
 		font-family: Impact, Charcoal, sans-serif;
 		width: 95%;
 		max-width: 500px;
-		margin: 42% auto auto;
+		margin: 25% auto auto;
+	}
+	
+	footer {
+		position: relative;
 	}
 }
 
