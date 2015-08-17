@@ -12,6 +12,10 @@ body {
 	width: 1750%;
 }
 
+#disabled {
+	display: none;
+}
+
 #wrapper {
 	background: url('img/galleryBackgroundM.jpg');
 	background-repeat: repeat-x;
@@ -71,9 +75,9 @@ h1 span img {
 	z-index: 9;
 }
 
-.shimmerWrap:hover > div {
+.shimmerWrap:hover > .shimmer {
 	margin-left: -375px;
-	-webkit-transition-duration: 2s;transition-duration: 2s;
+	-webkit-transition-duration: 1.5s;transition-duration: 1.5s;
 }
 
 .img {
@@ -241,7 +245,6 @@ audio {
 }
 
 
-
 /* MEDIA QUERRIES FOR MEDIUM SCREENS */
 @media screen and (min-width: 700px) {
 	/* html, body, #wrapper {
@@ -304,7 +307,7 @@ audio {
 		margin-left: 500px;
 	}
 
-	.shimmerWrap:hover > div {
+	.shimmerWrap:hover > .shimmer {
 		margin-left: -500px;
 	}
 
@@ -390,6 +393,26 @@ audio {
 	}
 }
 
+@media screen and (max-width: 900px) {
+	body {
+		width: auto;
+	}
+
+	#mainDiv,
+	audio,
+	button	{
+		display: none;
+	}
+	
+	#disabled {
+		display: block;
+		font-family: Impact, Charcoal, sans-serif;
+		width: 95%;
+		max-width: 500px;
+		margin: 42% auto auto;
+	}
+}
+
 
 
 /* MEDIA QUERRIES FOR LARGE SCREENS */
@@ -432,7 +455,7 @@ audio {
 		margin-left: 500px;
 	}
 
-	.shimmerWrap:hover > div {
+	.shimmerWrap:hover > .shimmer {
 		margin-left: -500px;
 	}
 
