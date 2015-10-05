@@ -90,6 +90,11 @@ document.addEventListener("wheel", stroll);
 document.addEventListener("touchstart", stroll);
 
 function stroll() {
-	scrollBy(50,0);
+	//if (window.event.wheelDelta.detail > 0) {
+		scrollBy(50,0);
+	// } else if (window.event.wheelDelta.detail < 0) {
+		// scrollBy(-50,0);
+	// }
+	//alert(event.deltaX );
 };
 

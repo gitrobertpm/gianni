@@ -51,7 +51,8 @@ h1 span img {
 
 .imgWrap {
 	width: 270px;
-	margin: 160px auto auto;
+	margin: 175px auto auto;
+	z-index: 9;
 }
 
 .shimmerWrap {
@@ -212,7 +213,7 @@ audio {
 	
 	.imgWrap {
 		width: 270px;
-		margin: 25% auto auto;
+		margin: 100px auto auto;
 	}
 	
 	audio {
@@ -294,7 +295,7 @@ audio {
 	
 	.imgWrap {
 		width: 425px;
-		margin: 25% auto auto;
+		margin: 275px auto auto;
 	}
 	
 	.shimmerWrap {
@@ -393,7 +394,7 @@ audio {
 	}
 }
 
-@media screen and (max-width: 900px) {
+/* @media screen and (max-width: 900px) {
 	html, body, #wrapper {
 		height: auto;
 		width: auto;
@@ -422,7 +423,7 @@ audio {
 	footer {
 		position: relative;
 	}
-}
+} */
 
 
 
@@ -454,6 +455,7 @@ audio {
 	
 	.imgWrap {
 		width: 525px;
+		margin-top: 222px;
 	}
 	
 	.shimmerWrap {
