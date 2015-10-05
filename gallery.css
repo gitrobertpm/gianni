@@ -52,7 +52,7 @@ h1 span img {
 .imgWrap {
 	width: 270px;
 	margin: 175px auto auto;
-	z-index: 9;
+	/* z-index: 9; */
 }
 
 .shimmerWrap {
